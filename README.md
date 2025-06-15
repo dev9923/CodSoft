@@ -1,28 +1,25 @@
-# 💼 CodSoft Internship Projects (Web Development Track)
+# 🎵 Premium Music Landing Page
 
-Welcome to my **Web Development Internship Repository** completed under **CodSoft**. This repository contains a collection of responsive and interactive front-end projects built with **HTML**, **CSS**, and **JavaScript**. Each project was designed to demonstrate core web development skills including layout structuring, styling, animations, and user interactivity.
-
-> 🚀 Internship Duration: May–June 2024  
-> 🛠️ Role: Front-End Web Developer Intern
-
----
-
-## 🧠 Projects Overview
-
-| Task | Project Name           | Description                                                                 | Tech Stack             |
-|------|------------------------|-----------------------------------------------------------------------------|------------------------|
-| 01   | Landing Page           | A responsive landing page with animated transitions and styled sections     | HTML, CSS              |
-| 02   | Personal Portfolio     | A full personal portfolio page with projects, contact form, and smooth nav  | HTML, CSS, JavaScript  |
-| 03   | Calculator App         | A sleek and functional calculator with all basic operations                 | HTML, CSS, JavaScript  |
-| 04   | To-Do List Web App     | Manage daily tasks with add/delete/complete features                        | HTML, CSS, JavaScript  |
-| 05   | Responsive Blog Layout | A clean blog page with media queries and adaptive grids                     | HTML, CSS              |
+A modern and responsive **landing page** designed to promote a premium music subscription service. Built with **HTML** and **CSS**, this project demonstrates clean UI, responsive design principles, and interactive elements, making it suitable for digital product marketing and frontend practice.
 
 ---
 
 ## 🚀 Features
-- Responsive design for various screen sizes
-- Modern UI/UX elements
-- Optimized for performance
+
+- 📱 **Responsive Layout** – Adapts gracefully to mobile, tablet, and desktop devices.
+- 🎨 **Stylish UI** – Minimal, modern design with promotional highlight banners and hover effects.
+- 🔔 **Animated Headline & Offer Box** – Attention-grabbing promotional message with fade-in animations.
+- 🔗 **Navigation Bar** – Includes common menu items like Support, Download, Login, and Signup.
+- 📷 **Hero Image Section** – Visually appealing promotional image with rounded edges.
+- 📄 **Terms Footer** – Clean footer with terms and conditions notice.
+
+---
+
+## 🛠️ Tech Stack
+
+- ✅ HTML5
+- ✅ CSS3 (custom styles, no framework)
+- ✅ Font Awesome Icons (via CDN)
   
 ---
 
