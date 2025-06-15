@@ -1,138 +1,203 @@
-*{
-    padding: 0;
-    margin: 0;
+/* General Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-    background-size: cover;
-    background-image: url("image2.jpeg");
-    background-color: rgba(255, 255, 255, 0.5);
+
+/* Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f0e6e471;
+  background-image: url("image2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-/* Header */
-.navbar{
-    height:60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 1);
-    
+
+/* Global Image Styling */
+img {
+  width: 100vw;
+  height: 250px;
 }
+
+/* Navbar */
+.navbar {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 1);
+}
+
 .items ul li {
-    display: inline;
-    margin-left:100px;
-    margin-right: 10px;
-    font-size: medium;
-    font-weight: 800;
-    font-family: Arial, Helvetica, sans-serif;
+  display: inline;
+  margin-left: 100px;
+  margin-right: 10px;
+  font-size: medium;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
 }
-a:hover{
-    text-decoration: underline;
+
+a {
+  text-decoration: none;
+  color: white;
 }
-a{
-    
-    text-decoration: none;
-    color:white;
+
+a:hover {
+  text-decoration: underline;
 }
-/* Section */
-section{
-    display: flex;
+
+/* Landing Page Section */
+section.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
 }
-.box1{
-    margin-left: 2rem;;
+
+.box1 {
+  flex: 1;
+  margin-left: 2rem;
 }
-.headline{
-    margin-top: 150px;
-    font-size:40px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    color :white;
-}
+
 .headline {
-    opacity: 0; /* Start with opacity 0 */
-    animation: fadeIn 2s forwards; /* Animation duration 1 second */
-    animation-delay: 1s; 
+  margin-top: 150px;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: white;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  animation-delay: 1s;
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
-.subheading{
-    color:white;
-    margin-top: 2rem;
-}
-.offer{
-    margin-top: 2rem;
-    margin-left:0.2rem ;
-    padding:0.3rem;
-    width:160px;
-    background-color: rgba(25, 25, 25, 0.665);
-    color:white;
-    border:1px solid rgba(25, 25, 25, 0.465);
-}
-.buttons{
-    display: flex;
-    margin-left: 0.1rem;
-}
-.button1 button{
-    margin-top: 1.5rem;
-    width:250px;
-    height:40px;
-    background-color: black;
-    color: white;
-    border:2px solid black;
-    border-radius: 2rem;
-    font-size: medium;
-}
-.button2 button{
-    margin-top: 1.5rem;
-    margin-left: 1rem;
-    width:250px;
-    height:40px;
-    background-color: black;
-    color: white;
-    border:2px solid black;
-    border-radius: 2rem;
-    font-size: medium;
-}
-button:hover{
-    border-color: rgba(245, 245, 220, 0.701);
-}
-.box2{
-    margin-top: 2rem;
-    margin-left: 25%;
-    align-content: end;
 
+.subheading {
+  color: white;
+  margin-top: 2rem;
 }
+
+.offer {
+  margin-top: 2rem;
+  padding: 0.3rem;
+  width: 160px;
+  background-color: rgba(25, 25, 25, 0.665);
+  color: white;
+  border: 1px solid rgba(25, 25, 25, 0.465);
+}
+
+.buttons {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.button1 button,
+.button2 button {
+  width: 250px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  border-radius: 2rem;
+  font-size: medium;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.button1 button:hover,
+.button2 button:hover {
+  border-color: rgba(245, 245, 220, 0.701);
+}
+
 .box2 {
-    position: relative; /* Ensure positioning context */
-    left: -100%; /* Start off-screen to the left */
-    animation: slideIn 1s forwards; /* Animation duration 1 second */
-    animation-delay: 2s; /* Delay the animation by 2 seconds */
+  flex: 1;
+  text-align: center;
+  animation: slideIn 1s forwards;
+  animation-delay: 2s;
+  position: relative;
+  left: -100%;
 }
 
 @keyframes slideIn {
-    0% {
-        left: -100%; /* Start off-screen to the left */
-    }
-    100% {
-        left: 0; /* Slide in to the original position */
-    }
+  to {
+    left: 0;
+  }
 }
-/*Footer*/
-footer p{
-    margin: 2rem;
-    color:white;
 
+/* Stopwatch Section */
+.stopwatch-section {
+  margin-top: 4rem;
+  text-align: center;
 }
-footer p a{
-    text-decoration: underline;
+
+.outer {
+  margin: 2rem auto;
+  width: 500px;
+  border: 2px solid black;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
 }
-.footpart{
-    font-size: smaller;
-    margin-left:2rem ;
-    margin-top: 8%;
+
+.count_box {
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 3rem;
+  font-size: 60px;
+  font-weight: 400;
+  width: 300px;
+  height: 50px;
+  background-color: rgba(221, 160, 221, 0.203);
+}
+
+.btn {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+button {
+  font-weight: 400;
+  font-size: medium;
+  padding: 10px;
+  width: 100px;
+  border-radius: 10px;
+  border: 2px solid plum;
+  background-color: rgba(255, 124, 205, 0.511);
+  cursor: pointer;
+}
+
+button:hover {
+  color: white;
+  opacity: 0.9;
+  border-color: rgba(216, 112, 112, 0.315);
+}
+
+/* Footer */
+footer p {
+  margin: 2rem;
+  color: white;
+}
+
+footer p a {
+  text-decoration: underline;
+  color: #ddd;
+}
+
+.footpart {
+  font-size: smaller;
+  margin-left: 2rem;
+  margin-top: 8%;
+  color: white;
 }
